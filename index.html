@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Final 2º Bimestre Caio Eduardo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <a href="#"><img src="img/logo.png" alt="Logo" class="logo"></a>
+
+        <ul class="menu">
+            <li><a href="#cabelhado">Home</a></li>
+            <li><a href="#produto">Produto</a></li>
+            <li><a href="#feature">Recursos</a></li>
+            <li  id="ultimo"><a href="#rodape">Sobre</a></li>
+        </ul>
+    </header>
+
+    <main class="principal">
+        <section id="produto">
+            <h1 class="titulo">Garrafa Smart-Thermo</h1>
+            <div  class="img-produto">            
+                <img src="img/img_produto1.png" alt="Produto">
+            </div>
+            <a href="#formCompra" class="botao-comprar">Compre Agora!</a>
+        </section>
+
+        <section id="feature">
+            <div class="recursos">
+                <div class="gelada24h" >
+                    <h3>24 Horas Gelada</h3>
+                    <img src="img/img_24hGelada.png" alt="Gelada 24 horas">
+                </div>
+                <div class="conex-app">
+                    <h3>Conexão com Aplicativo</h3>
+                    <img src="img/img_app.png" alt="Aplicativo">
+                </div>
+                <div class="termometro">
+                    <h3>Termômetro Digital</h3>
+                    <img src="img/img_termometro.png" alt="Termômetro">
+                </div>
+            </div>
+          
+            <div class="compra">
+                <form action="#" id="formCompra">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required placeholder="Digite seu nome completo">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required placeholder="seuemail@email.com">
+                    <div class="quantidade">
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" id="quantidade">
+                    </div>
+                    <button type="submit">Confirmar Pedido</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="rodape">
+        <div class="rodape-links">    
+            <h4>Links</h4>
+            <ul >
+                <li><a href="#cabecalho">Home</a></li>
+                <li><a href="#produto">Produtos</a></li>
+                <li><a href="#feature">Recursos</a></li>
+                <li><a href="#rodape">Sobre</a></li>
+            </ul>
+        </div>
+
+        <div class="informacoes">
+            <div class="endereco">
+            <h4>Endereço</h4>
+            <p>Rua Brusque, nº 2926, Conjunto Santa Catarina, Potengi - Natal-RN</p>
+            <p>CEP: 59112-490</p>
+            </div>
+            <p> Copyright &copy; 2026 EcoFuture. Todos os direitos reservados</p>
+        </div>
+        
+        <div class="redes-sociais">
+            <h4>Redes Sociais</h4>
+            <ul>
+                <li><a href="#"><img src="img/logoInstagram.png" alt="Instagram"></a></li>
+                <li><a href=""><img src="img/logoX.png" alt="X"></a></li>
+                <li><a href=""><img src="img/logoFacebook.png" alt="Facebook"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
