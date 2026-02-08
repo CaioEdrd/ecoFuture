@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="cabecalho">
-        <a href="#"><img src="img/logo.png" alt="Logo" class="logo"></a>
+    <header id="cabecalho"> <!--Topo da página-->
+        <a href="#"><img src="img/logo.png" alt="Logo" class="logo"></a> <!--Logo da página-->
 
-        <ul class="menu">
+        <ul class="menu"> <!--Menu de navegação por links-->
             <li><a href="#cabelhado">Home</a></li>
             <li><a href="#produto">Produto</a></li>
             <li><a href="#feature">Recursos</a></li>
@@ -18,18 +18,19 @@
         </ul>
     </header>
 
-    <main class="principal">
-        <section id="produto">
+    <main class="principal"> <!--Conteúdo Principal-->
+
+        <section id="produto"> <!--Produto em destaque-->
             <h1 class="titulo">Garrafa Smart-Thermo</h1>
             <div  class="img-produto">            
                 <img src="img/img_produto1.png" alt="Produto">
             </div>
-            <a href="#formCompra" class="botao-comprar">Compre Agora!</a>
+            <a href="#formCompra" class="botao-comprar">Compre Agora!</a> <!--Botão que redireciona para o preenchimento das informações para comprar o produto-->
         </section>
 
-        <section id="feature">
-            <div class="recursos">
-                <div class="gelada24h" >
+        <section id="feature"> <!--Seção de principais recursos do produto-->
+            <div class="recursos"> <!--Divisão dos recursos-->
+                <div class="gelada24h">
                     <h3>24 Horas Gelada</h3>
                     <img src="img/img_24hGelada.png" alt="Gelada 24 horas">
                 </div>
@@ -43,8 +44,9 @@
                 </div>
             </div>
           
-            <div class="compra">
-                <form action="#" id="formCompra">
+            <div class="compra"> <!--Container do formulário para compra do produto-->
+                <form action="#" id="formCompra"> <!--Formulário de compra-->
+                    <h1>Solicite a sua aqui</h1>
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome" required placeholder="Digite seu nome completo">
                     <label for="email">E-mail</label>
@@ -60,8 +62,8 @@
 
     </main>
 
-    <footer id="rodape">
-        <div class="rodape-links">    
+    <footer id="rodape"> <!--Rodapé da página-->
+        <div class="rodape-links"> <!--Principais links relacionados a página-->
             <h4>Links</h4>
             <ul >
                 <li><a href="#cabecalho">Home</a></li>
@@ -71,7 +73,7 @@
             </ul>
         </div>
 
-        <div class="informacoes">
+        <div class="informacoes"> <!--Informações da empresa-->
             <div class="endereco">
             <h4>Endereço</h4>
             <p>Rua Brusque, nº 2926, Conjunto Santa Catarina, Potengi - Natal-RN</p>
@@ -80,7 +82,7 @@
             <p> Copyright &copy; 2026 EcoFuture. Todos os direitos reservados</p>
         </div>
         
-        <div class="redes-sociais">
+        <div class="redes-sociais"> <!--Rede Sociais da empresa-->
             <h4>Redes Sociais</h4>
             <ul>
                 <li><a href="#"><img src="img/logoInstagram.png" alt="Instagram"></a></li>

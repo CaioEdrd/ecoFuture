@@ -1,14 +1,17 @@
+/* importação da fonte pelo google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* configuração geral da página */
 body{
     margin: 0;
     padding: 0;
     font-size: 16px;
     background-color: var(--color-ligthBlue);
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 
+/* variáveis de cores que serão utilizadas */
 :root{
     --color-white: #f8fafc;
     --color-black: #000;
@@ -16,6 +19,7 @@ body{
     --color-darkBlue:#0f172a;
 }
 
+/* estilização das tags no geral */
 a{
     text-decoration: none;
     color: var(--color-black);
@@ -26,6 +30,12 @@ h1, p ,h4{
     cursor: default;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* estilização do cabeçalho*/
 #cabecalho{
  display: flex;
  align-items: center;
@@ -35,12 +45,13 @@ h1, p ,h4{
  background: var(--color-white);
 }
 
+/* estilização da logo da página*/
 .logo{
-    width: 200px;
-    min-width: 150px;
     object-fit: cover;
+    max-width: 150px;
 }
 
+/* estilização do menu de links do cabeçalho*/
 .menu{
     display: flex;
     list-style: none;
@@ -55,9 +66,10 @@ h1, p ,h4{
 }
 
 #ultimo{
-    border: none    ;
+    border: none;
 }
 
+/* estilização do conteúdo principal da página */
 .principal{
     display: flex;
     flex-direction: column;
@@ -65,7 +77,13 @@ h1, p ,h4{
 }
 .titulo{
     margin-top: 10px;
+    padding: 10px;
+    background-color: var(--color-darkBlue);
+    color: var(--color-white);
+    border-radius: 10px;
 }
+
+/* estilização do produto principal da empresa*/
 #produto{
     display: flex;
     flex-direction: column;
@@ -74,7 +92,8 @@ h1, p ,h4{
 }
 
 .img-produto{
-    max-width: 700px;
+    max-width: 710px;
+    object-fit: cover;
 }
 
 .img-produto img{
@@ -82,10 +101,12 @@ h1, p ,h4{
     border-radius: 10px;
 }
 
+/* estilização hover do produto principal*/
 .img-produto:hover{
     transform: translate(0px) rotate(0.994983deg) skewX(0deg) skewY(0deg) scaleX(1) scaleY(1);
 }
 
+/* estilização do botão de comprar*/
 .botao-comprar{
     padding: 20px 40px;
     border: 1px solid black;
@@ -100,6 +121,7 @@ h1, p ,h4{
     color: var(--color-darkBlue);
 }
 
+/* estilização do container de recursos do produto*/
 .recursos{
     margin: 20px 0 20px 0;
     display: flex;
@@ -109,7 +131,7 @@ h1, p ,h4{
 }
 
 .gelada24h, .conex-app, .termometro{
-  min-width: 260px;
+  min-width: 280px;
   max-width: 400px;  
   display: flex;
   flex-direction: column;
@@ -118,16 +140,20 @@ h1, p ,h4{
   padding: 15px;
   border-radius: 10px;
 }
+
 #feature img{
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
+/* estilização hover dos containers dos recursos */
+
 .gelada24h:hover, .conex-app:hover, .termometro:hover{
     transform: scale(1.07);
 }
 
+/* estilização do formulário de compra do produto */
 .compra{
     display: flex;
     justify-content: center ;
@@ -137,12 +163,17 @@ h1, p ,h4{
     display: flex;
     flex-direction: column;
     padding: 15px 25px;
-    width: 350px;
-    min-width: 300px;
+    width: 100%;
+    max-width: 400px;
     margin-bottom: 10px;
     background: var(--color-darkBlue);
     color: var(--color-white);
     border-radius: 10px;
+}
+
+#formCompra h1{
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 #formCompra label, #formCompra input{
@@ -150,6 +181,19 @@ h1, p ,h4{
     flex-direction: column;
     margin: 0 0 10px 0;
     padding: 5px 0px;
+}
+
+/* estilização input do formulário */
+
+#formCompra input{
+    border: 2px solid var(--color-white); 
+    transition: all 0.3s ease;
+}
+
+ #formCompra input:focus{
+    border-color: var(--color-black); 
+    outline: none; 
+    box-shadow: 0 0 0 4px var(--color-ligthBlue);
 }
 
 #formCompra button{
@@ -162,6 +206,7 @@ h1, p ,h4{
     font-size: 1.02rem;
 }
 
+/* estilização hover do botão de compra do formulário */
 #formCompra button:hover{
     transform: scale(1.08);
 }
@@ -174,9 +219,10 @@ h1, p ,h4{
 }
 
 .quantidade input{
-    width: 35px;
+    width: 50px;
 }
 
+/* estilização do rodapé */
 #rodape{
     display: flex;
     justify-content: space-between;
@@ -186,6 +232,7 @@ h1, p ,h4{
     gap: 15px;
 }
 
+/* estilização das informações da empresa */
 .informacoes{
     display: flex;
     flex-direction: column;
@@ -204,6 +251,8 @@ h1, p ,h4{
     padding-bottom: 15px;
 }
 
+/* estilização dos links principais */
+
 .rodape-links ul{
     list-style: none;
     display: flex;
@@ -220,9 +269,12 @@ h1, p ,h4{
     padding: 0 0 10px 0;
 }
 
+/* estilização das redes sociais */
+
 .redes-sociais{
     display: flex;
     flex-direction: column;
+    margin-right: 3px;
 }
 
 .redes-sociais ul{
@@ -242,6 +294,7 @@ h1, p ,h4{
     padding: 5px;
 }
 
+/* estilização hover das redes sociais */
 .redes-sociais img:hover{
     transform: scale(1.5);
 }
